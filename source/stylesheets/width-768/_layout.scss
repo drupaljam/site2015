@@ -1,0 +1,9 @@
+section {
+  padding-top: 4em;
+  padding-bottom: 4em;
+
+  &:after {
+    padding-bottom: 4em;
+    bottom: -2em;
+  }
+}

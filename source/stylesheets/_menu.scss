@@ -1,0 +1,32 @@
+
+ul.menu {
+  background: asset-data-uri('logo.svg');
+  background-size: 10em auto;
+  background-repeat: no-repeat;
+  background-position: center 0;
+
+  padding: (10em / $logo_ratio + 2em) 0 0;
+  
+  margin: 0;
+  list-style: none;
+
+  li {
+    font-family: 'Boston Traffic';
+
+    height: 2em;
+    text-align: center;
+
+    a, a:hover, a:visited, a:active {
+      color: black;
+      padding: 0 0.25em 0.25em;
+      text-decoration: none;
+      -webkit-transition: border-color 0.2s;
+      transition: border-color 0.2s;
+      border-bottom: 2px solid $color_main;
+    }
+
+    a:hover {
+      border-color: $color_black;
+    }
+  }
+}

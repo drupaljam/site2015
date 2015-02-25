@@ -1,0 +1,32 @@
+@font-face {
+  font-family: 'Boston Traffic';
+  src: font-url('bostontraffic.eot');
+  src: font-url('bostontraffic.eot?#iefix') format('embedded-opentype'),
+       font-url('bostontraffic.woff') format('woff'),
+       font-url('bostontraffic.ttf') format('truetype'),
+       font-url('bostontraffic.svg#bostontrafficregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Karla';
+  src: font-url('Karla-Regular.eot');
+  src: font-url('Karla-Regular.eot?#iefix') format('embedded-opentype'),
+       font-url('Karla-Regular.woff') format('woff'),
+       font-url('Karla-Regular.ttf') format('truetype'),
+       font-url('Karla-Regular.svg#karlaregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Karla';
+  src: font-url('Karla-Bold.eot');
+  src: font-url('Karla-Bold.eot?#iefix') format('embedded-opentype'),
+       font-url('Karla-Bold.woff') format('woff'),
+       font-url('Karla-Bold.ttf') format('truetype'),
+       font-url('Karla-Bold.svg#karlabold') format('svg');
+  font-weight: 700;
+  font-style: normal;
+}
