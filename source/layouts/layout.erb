@@ -16,9 +16,18 @@
   <body>
     <div class="wrapper">
       <section class="header">
+        <%= link_to '', 'index.html', class: 'logo' %>
         <ul class="menu">
-          <li><%= link_to 'Informatie', '/index.html' %></li>
-          <li><%= link_to 'Programma', '/programma.html' %></li>
+          <% [
+               # 'index.html'
+             ].each do |path|
+              item = sitemap.find_resource_by_destination_path(path)
+              active = item == current_resource
+              attrs = Hash.new
+              attrs['class'] = 'active' if active
+          %>
+            <li><%= link_to item.data['title'], item.url, attrs %></li> 
+          <% end %>
         </ul>
       </section>
 
@@ -26,9 +35,9 @@
     </div>
 
     <div class="footer-wrapper">
-      <section class="footer">
+      <section class="footer"><div class="section-inner">
         <p class="sdn">
-          Powered by <a href="http://stichtingdrupal.nl/">Stichting Drupal Nederland</a>
+          Powered by <a href="http://stichtingdrupal.nl/" target="_blank">Stichting Drupal Nederland</a>
         </p>
         <p>
           DrupalJam wordt mogelijk gemaakt door de vrijwillige bijdrage van leden uit de Nederlandse Drupal-community.
@@ -36,7 +45,7 @@
         <p>
           <%= link_to 'Colofon', '/colofon.html' %>
         </p>
-      </section>
+      </div></section>
     </div>
 
     <script src="javascripts/all.js"></script>

@@ -1,0 +1,43 @@
+
+section.content {
+  h1 {
+    font-family: 'Boston Traffic';
+    font-weight: 700;
+    font-size: 2em;
+
+    &:after {
+      content: ' >';
+      color: $color_main;
+    }
+  }
+  &.main {
+    h1:after {
+      color: $color_white;
+    }
+  }
+
+  a {
+    &, &:active, &:visited, &:hover {
+      color: $color_black;
+      text-decoration: none;
+      border-bottom: 1px solid $color_black;
+      -webkit-transition: border-color 0.2s, color 0.2s;
+      transition: border-color 0.2s, color 0.2s;
+    }
+
+    &:hover {
+      color: $color_main;
+      border-bottom: 1px solid $color_main;
+    }
+  }
+
+  .divider {
+    position: relative;
+    top: -0.25em;
+    margin: 0 0.25em;
+    display: inline-block;
+    height: 1px;
+    width: 0.7em;
+    background: $color_black;
+  }
+}

@@ -1,11 +1,16 @@
 
-ul.menu {
+.logo {
+  display: block;
+  width: 10em;
+  height: (10em / $logo_ratio);
   background: asset-data-uri('logo.svg');
-  background-size: 10em auto;
+  background-size: 100% auto;
   background-repeat: no-repeat;
-  background-position: center 0;
+  background-position: 0 0;
+  margin: 0 auto 1em;
+}
 
-  padding: (10em / $logo_ratio + 2em) 0 0;
+ul.menu {
   
   margin: 0;
   list-style: none;
@@ -25,7 +30,7 @@ ul.menu {
       border-bottom: 2px solid $color_main;
     }
 
-    a:hover {
+    a:hover, a.active {
       border-color: $color_black;
     }
   }

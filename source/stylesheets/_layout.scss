@@ -19,14 +19,20 @@ body {
 }
 
 section {
-  padding: 3em 1em;
+  padding: 3em 0;
   position: relative;
+
+  .section-inner {
+    margin: 0 auto;
+    max-width: 940px;
+    padding: 0 1em;
+  }
 
   &:after {
     content: '';
     width: 100%;
     padding-bottom: 2em;
-    background: url('../images/border.svg');
+    background-image: asset-data-uri('border.svg');
     background-size: auto 100%;
     background-repeat: repeat-x;
     background-position: top center;
