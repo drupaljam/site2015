@@ -1,12 +1,12 @@
 
 section.content {
   h1 {
-    font-family: 'Boston Traffic';
-    font-weight: 700;
-    font-size: 2em;
+    @include boston-traffic;
+    font-size: 1.4em;
+    margin: 2em 0 1em;
 
-    &:after {
-      content: ' >';
+    &:before {
+      content: '> ';
       color: $color_main;
     }
   }

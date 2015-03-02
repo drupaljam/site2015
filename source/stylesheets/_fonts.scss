@@ -9,6 +9,12 @@
   font-style: normal;
 }
 
+@mixin boston-traffic {
+  font-family: 'Boston Traffic';
+  font-weight: 700;
+  letter-spacing: 0.07em;
+}
+
 @font-face {
   font-family: 'Karla';
   src: font-url('Karla-Regular.eot');

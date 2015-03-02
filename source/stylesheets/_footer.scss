@@ -1,32 +1,35 @@
 
 section.footer {
   .section-inner {
-    max-width: 640px;
+    // max-width: 640px;
   }
   
   p {
-    text-align: center;
+    text-align: left;
 
     a, a:hover, a:visited, a:active {
-      color: $color_white;
+      color: $color_gray;
       text-decoration: none;
-      border-bottom: 1px solid $color_black;
+      border-bottom: 1px solid $color_gray;
 
       -webkit-transition: border-color 0.2s;
       transition: border-color 0.2s;
     }
 
     a:hover {
-      border-color: $color_white;
+      border-color: $color_black;
     }
   }
 
-  p.sdn {
+  span.sdn {
+    display: block;
     background: asset-data-uri('sdn.svg');
     background-repeat: no-repeat;
     background-size: 5em auto;
     background-position: center 0;
 
-    padding: (5em / $sdn_logo_ratio + 1em) 0 0;
+    width: 5em;
+    height: (5em / $sdn_logo_ratio);
+    margin-bottom: 1em;
   }
 }

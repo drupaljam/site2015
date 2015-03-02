@@ -15,7 +15,7 @@
   </head>
   <body>
     <div class="wrapper">
-      <section class="header">
+      <section class="header"><div class="section-inner">
         <%= link_to '', 'index.html', class: 'logo' %>
         <ul class="menu">
           <% [
@@ -29,15 +29,16 @@
             <li><%= link_to item.data['title'], item.url, attrs %></li> 
           <% end %>
         </ul>
-      </section>
+      </div></section>
 
       <%= yield %>
     </div>
 
     <div class="footer-wrapper">
       <section class="footer"><div class="section-inner">
-        <p class="sdn">
-          Powered by <a href="http://stichtingdrupal.nl/" target="_blank">Stichting Drupal Nederland</a>
+        <span class="sdn"></span>
+        <p>
+          Powered by <a href="http://stichtingdrupal.nl/" target="_blank">Stichting Drupal Nederland</a>.
         </p>
         <p>
           DrupalJam wordt mogelijk gemaakt door de vrijwillige bijdrage van leden uit de Nederlandse Drupal-community.

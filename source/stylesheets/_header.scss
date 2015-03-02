@@ -1,13 +1,13 @@
 
 .logo {
   display: block;
-  width: 10em;
-  height: (10em / $logo_ratio);
+  width: 7em;
+  height: (7em / $logo_ratio);
   background: asset-data-uri('logo.svg');
   background-size: 100% auto;
   background-repeat: no-repeat;
   background-position: 0 0;
-  margin: 0 auto 1em;
+  margin: 0 0 1em;
 }
 
 ul.menu {
