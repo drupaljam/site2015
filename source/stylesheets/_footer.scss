@@ -1,11 +1,19 @@
 
 section.footer {
   .section-inner {
+    font-size: 0.8em;
+  }
+
+  .section-inner {
     // max-width: 640px;
   }
   
   p {
     text-align: left;
+
+    &.links {
+      margin-top: 2em;
+    }
 
     a, a:hover, a:visited, a:active {
       color: $color_white;
