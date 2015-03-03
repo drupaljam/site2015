@@ -8,9 +8,9 @@ section.footer {
     text-align: left;
 
     a, a:hover, a:visited, a:active {
-      color: $color_gray;
+      color: $color_white;
       text-decoration: none;
-      border-bottom: 1px solid $color_gray;
+      border-bottom: 1px solid $color_white;
 
       -webkit-transition: border-color 0.2s;
       transition: border-color 0.2s;
