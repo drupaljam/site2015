@@ -15,8 +15,10 @@
 @import "layout";
 @import "header";
 
-@import "intro";
 @import "content";
+@import "intro";
+@import "button";
+@import "kart";
 
 @import "footer";
 
@@ -26,4 +28,6 @@
   @import "width-768/base";
   @import "width-768/layout";
   @import "width-768/header";
+
+  @import "width-768/kart";
 }

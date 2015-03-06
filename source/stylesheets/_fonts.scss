@@ -36,3 +36,25 @@
   font-weight: 700;
   font-style: normal;
 }
+
+@font-face {
+  font-family: 'Karla';
+  src: font-url('Karla-Italic.eot');
+  src: font-url('Karla-Italic.eot?#iefix') format('embedded-opentype'),
+       font-url('Karla-Italic.woff') format('woff'),
+       font-url('Karla-Italic.ttf') format('truetype'),
+       font-url('Karla-Italic.svg#karlaitalic') format('svg');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Karla';
+  src: font-url('Karla-BoldItalic.eot');
+  src: font-url('Karla-BoldItalic.eot?#iefix') format('embedded-opentype'),
+       font-url('Karla-BoldItalic.woff') format('woff'),
+       font-url('Karla-BoldItalic.ttf') format('truetype'),
+       font-url('Karla-BoldItalic.svg#karlabolditalic') format('svg');
+  font-weight: 700;
+  font-style: italic;
+}
