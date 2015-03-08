@@ -5,6 +5,10 @@ p, li {
     font-style: italic;
   }
 
+  &.intro {
+    font-weight: 700;
+  }
+
   a {
     &, &:active, &:visited, &:hover {
       color: $color_black;
@@ -15,8 +19,8 @@ p, li {
     }
 
     &:hover {
-      color: $color_main;
-      border-bottom: 1px solid $color_main;
+      color: $color_black;
+      border-bottom: 1px solid transparent;
     }
   }
 
@@ -51,8 +55,8 @@ dl {
 section.content {
   h1 {
     @include boston-traffic;
-    font-size: 1.4em;
-    margin: 2em 0 1em;
+    font-size: 2.2em;
+    margin: 2em 0 1.4em;
 
     &:before {
       content: '> ';
