@@ -1,18 +1,18 @@
 section.kart {
   .section-inner {
-    &:before {
-      float: right;
-      background-size: 9em auto;
-      width: 10em;
-      height: (9em / $kart_ratio);
-    }
+    // &:before {
+    //   float: right;
+    //   background-size: 9em auto;
+    //   width: 10em;
+    //   height: (9em / $kart_ratio);
+    // }
 
-    .section-content {
-      margin-right: 10em;
-    }
+    // .section-content {
+    //   margin-right: 10em;
+    // }
   }
 
-  h1 {
-    margin-top: 2em;
-  }
+  // h1 {
+  //   margin-top: 2em;
+  // }
 }

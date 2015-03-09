@@ -1,18 +1,29 @@
 section.kart {
   .section-inner {
-    &:before {
-      content: '';
+    // &:before {
+    //   content: '';
 
-      display: block;
-      background-image: image-url('kart.svg');
-      height: 6em;
-      background-size: auto 6em;
-      background-position: right top;
-      background-repeat: no-repeat;
-    }
+    //   display: block;
+    //   background-image: image-url('kart.svg');
+    //   height: 6em;
+    //   background-size: auto 6em;
+    //   background-position: right top;
+    //   background-repeat: no-repeat;
+    // }
+
+    
   }
 
-  h1 {
-    margin-top: 1em;
+  // h1 {
+  //   margin-right: (7em / 2.2);
+  // }
+
+  p.intro {
+    padding-right: 7em;
+
+    background-image: image-url('kart.svg');
+    background-size: auto 6em;
+    background-position: right top;
+    background-repeat: no-repeat;
   }
 }
