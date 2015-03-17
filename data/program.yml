@@ -1,0 +1,209 @@
+---
+
+from: 9:00
+to: 17:30
+
+global:
+  slots:
+    -
+      from: 9:00
+      to: 9:45
+      title: Inloop
+      type: plenair
+    -
+      from: 12:30
+      to: 13:30
+      title: Lunch
+      type: plenair
+rooms:
+  -
+    name: Room 1
+    slots:
+      - 
+        from: 10:00
+        to: 10:45
+        title: Keynote 1
+        speaker: Keynote spreker
+        type: keynote
+      - 
+        from: 11:00
+        to: 11:45
+        title: Featured 1
+        speaker: Featured spreker
+        type: featured
+      - 
+        from: 12:00
+        to: 12:15
+        title: Lightningtalk 1
+        speaker: Lightning spreker
+        type: lightningtalk
+      - 
+        from: 12:15
+        to: 12:30
+        title: Lightningtalk 2
+        speaker: Lightning spreker
+        type: lightningtalk
+      - 
+        from: 13:30
+        to: 14:15
+        title: Featured 2
+        speaker: Featured spreker
+        type: featured
+      - 
+        from: 14:30
+        to: 14:45
+        title: Lightningtalk 3
+        speaker: Lightning spreker
+        type: lightningtalk
+      - 
+        from: 14:45
+        to: 15:00
+        title: Lightningtalk 4
+        speaker: Lightning spreker
+        type: lightningtalk
+      - 
+        from: 15:00
+        to: 15:45
+        title: Featured 3
+        speaker: Featured spreker
+        type: featured
+      - 
+        from: 16:00
+        to: 16:15
+        title: "Dries Q&A"
+        speaker: Dries Buytaert
+        type: lightningtalk
+      - 
+        from: 16:15
+        to: 16:30
+        title: "Groepsfoto"
+        type: plenair
+      - 
+        from: 16:30
+        to: 17:15
+        title: Keynote 2
+        speaker: Keynote spreker
+        type: keynote
+      - 
+        from: 17:15
+        to: 17:30
+        title: "Sluiting"
+        type: plenair
+  -
+    name: Room 2
+    slots:
+      -
+        from: 11:00
+        to: 11:30
+        title: Community 1
+        speaker: Community spreker
+        type: community
+      -
+        from: 11:45
+        to: 12:30
+        title: Community 2
+        speaker: Community spreker
+        type: community
+      -
+        from: 13:30
+        to: 14:00
+        title: Community 3
+        speaker: Community spreker
+        type: community
+      - 
+        from: 14:15
+        to: 15:00
+        title: Featured 4
+        speaker: Featured spreker
+        type: featured
+      -
+        from: 15:15
+        to: 15:45
+        title: Community 4
+        speaker: Community spreker
+        type: community
+  -
+    name: Room 3
+    slots:
+      -
+        from: 11:15
+        to: 11:45
+        title: Sponsored 1
+        speaker: Sponsored spreker
+        type: sponsored
+      -
+        from: 12:00
+        to: 12:30
+        title: Community 5
+        speaker: Community spreker
+        type: community
+      -
+        from: 13:30
+        to: 14:15
+        title: Community 6
+        speaker: Community spreker
+        type: community
+      - 
+        from: 14:30
+        to: 15:00
+        title: Sponsored 2
+        speaker: Sponsored spreker
+        type: sponsored
+      -
+        from: 15:15
+        to: 15:45
+        title: Sponsored 3
+        speaker: Sponsored spreker
+        type: sponsored
+  -
+    name: Room 4
+    slots:
+      -
+        from: 11:00
+        to: 11:45
+        title: Community 7
+        speaker: Community spreker
+        type: community
+      -
+        from: 12:00
+        to: 12:30
+        title: Community 8
+        speaker: Community spreker
+        type: community
+      -
+        from: 13:30
+        to: 14:00
+        title: Community 9
+        speaker: Community spreker
+        type: community
+      - 
+        from: 14:15
+        to: 14:45
+        title: Community 10
+        speaker: Community spreker
+        type: community
+      -
+        from: 15:00
+        to: 15:45
+        title: Community 11
+        speaker: Community spreker
+        type: community
+  -
+    name: Room 5
+    slots:
+      -
+        from: 11:00
+        to: 12:15
+        title: Workshop
+        speaker: Workshop spreker
+        type: community
+      -
+        from: 13:30
+        to: 14:15
+        title: BoF 1
+        type: community
+      - 
+        from: 14:45
+        to: 15:30
+        title: BoF 2
+        type: community

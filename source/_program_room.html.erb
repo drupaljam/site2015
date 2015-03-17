@@ -1,0 +1,4 @@
+<div class="program-room">
+  <div class="program-room-title"><%= room['name'] %></div>
+  <%= partial 'program_slots', locals: {slots: room['slots']} %>
+</div>
