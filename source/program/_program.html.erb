@@ -8,7 +8,11 @@
   <div class="program">
     <div class="program-timeline">
       <% (program['from']...program['to']).step(15*60).each do |t| %>
-        <span><%= (Time.new(2015, 4, 30, 0 , 0, 0) + t).strftime('%k:%M') %></span>
+        <div class="program-timeline-time">
+          <div class="program-timeline-time-inner">
+            <%= (Time.new(2015, 4, 30, 0 , 0, 0) + t).strftime('%k:%M') %>
+          </div>
+        </div>
       <% end %>
     </div>
     <div class="program-global">

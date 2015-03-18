@@ -1,7 +1,7 @@
 
-$program-quarter-width: 3em;
+$program-quarter-width: 5em;
 $program-slot-height: 3em;
-$program-rooms-width: 1.5 * $program-quarter-width;
+$program-rooms-width: $program-quarter-width;
 
 $program-rooms: 5;
 $program-quarters: 34;
@@ -9,6 +9,7 @@ $program-quarters: 34;
 .program-wrapper {
   // padding-left: $program-rooms-width;
   width: 100%;
+  padding-left: $program-rooms-width;
   position: relative;
 
   .program {
@@ -23,7 +24,7 @@ $program-quarters: 34;
     left: 0;
     top: 0;
     z-index: 10;
-    padding-top: 1.5em;
+    padding-top: 1.7em;
     background: $color-main;
 
     .program-room {
@@ -43,7 +44,7 @@ $program-quarters: 34;
   .program-global {
     position: absolute;
     left: 0;
-    top: 1.5em;
+    top: 1.7em;
 
     .program-slot {
       height: ($program-rooms * $program-slot-height);
@@ -52,23 +53,24 @@ $program-quarters: 34;
 
   .program-timeline {
     @include clearfix;
-    width: ($program-quarters * $program-quarter-width + $program-rooms-width);
-    padding-left: $program-rooms-width;
+    width: ($program-quarters * $program-quarter-width);
 
-    span {
-      display: block;
+    .program-timeline-time {
       width: $program-quarter-width;
-      background: $color-black;
+      padding: 0.1em;
       float: left;
-      color: white;
-      text-align: center;
+
+      .program-timeline-time-inner {
+        background: $color-black;
+        color: white;
+        text-align: center;
+      }
     }
   }
 
   .program-slots {
     @include clearfix;
-    width: ($program-quarters * $program-quarter-width + $program-rooms-width);
-    padding-left: $program-rooms-width;
+    width: ($program-quarters * $program-quarter-width);
   }
 
   .program-slot {
@@ -83,6 +85,8 @@ $program-quarters: 34;
     .program-slot-inner {
       height: 100%;
       width: 100%;
+      padding: 0.25em;
+      text-align: center;
       background: white;
       overflow: hidden;
     }
