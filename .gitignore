@@ -21,4 +21,5 @@
 .ruby-version
 
 *.sublime-*
+.gems
 vendor
