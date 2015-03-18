@@ -20,6 +20,11 @@ rooms:
     name: Room 1
     slots:
       - 
+        from: 9:45
+        to: 10:00
+        title: "Opening"
+        type: plenair
+      - 
         from: 10:00
         to: 10:45
         title: Keynote 1
