@@ -57,7 +57,7 @@ title: "Informatie"
     </p>
 
     <% if data.respond_to?(:program) %>
-      <%= partial 'program', locals: {program: data.program } %>
+      <%= partial 'program/program', locals: {program: data.program } %>
     <% end %>
   </div>
 
