@@ -7,6 +7,8 @@
 #   config.output_style = :compact
 # end
 
+require 'lib/compass_ext'
+
 ###
 # Page options, layouts, aliases and proxies
 ###
