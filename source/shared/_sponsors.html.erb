@@ -1,0 +1,6 @@
+<div class="sponsors">
+  <span>Sponsoren van DrupalJam 2015</span>
+  <% data.sponsors[sponsor_type].each do |sponsor| %>
+    <a href="<%= sponsor['url'] %>" class="sponsor-<%= sponsor['key'] %>"><%= sponsor['name'] %></a>  
+  <% end %>
+</div>

@@ -1,0 +1,56 @@
+
+@import "variables";
+
+.sponsors {
+  text-align: center;
+  border: 3px solid $color-black;
+  padding: 0.5em 1em 1em;
+
+  span {
+    display: block;
+    margin-bottom: 1em;
+    font-family: 'Boston Traffic';
+
+    &:before {
+      content: '> ';
+      color: $color_main;
+    }
+
+    &:after {
+      content: ' <';
+      color: $color_main;
+    }
+  }
+
+  margin: 2em 0;
+}
+
+<%
+  areas = {
+    'bronze' => 10,
+    'silver' => 15,
+    'gold' => 35
+  }
+%>
+
+<% data.sponsors.each do |type, sponsors| %>
+  <% sponsors.each do | sponsor| %>
+    .sponsor-<%= sponsor['key'] %> {
+      $ratio: image-width("<%= "sponsors/#{type}/#{sponsor['key']}.svg" %>") / image-height("<%= "sponsors/#{type}/#{sponsor['key']}.svg" %>");
+
+      $width: sqrt( <%= areas[type] %> * $ratio);
+      $height: $width / $ratio;
+
+      display: inline-block;
+      width: #{$width}em;
+      height: #{$height}em;
+      background: asset-data-uri("<%= "sponsors/#{type}/#{sponsor['key']}.svg" %>");
+      background-size: 100% auto;
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      margin: 1em;
+      text-decoration: none;
+      text-indent: -9999px;
+    }
+  <% end %>
+<% end %>

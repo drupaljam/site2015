@@ -1,0 +1,56 @@
+
+bronze:
+  -
+    key: web-beest
+    name: Web-Beest
+    url: http://www.patrickkannekens.nl/
+  -
+    key: vdmi
+    name: ".VDMi/"
+    url: http://www.vdmi.nl/
+  -
+    key: haas
+    name: Haas Ontwerp
+    url: http://www.haas-ontwerp.nl/
+  -
+    key: goal-gorilla
+    name: GoalGorilla
+    url: http://www.goalgorilla.com/
+silver:
+  -
+    key: synetic
+    name: Synetic
+    url: https://synetic.nl/
+  -
+    key: triquanta
+    name: Triquanta
+    url: http://www.triquanta.nl/
+  -
+    key: trinoco
+    name: Trinoco
+    url: http://www.trinoco.nl/
+  -
+    key: limoen-groen
+    name: Limoen Groen
+    url: https://www.limoengroen.nl/
+  -
+    key: wunderkraut
+    name: Wunderkraut
+    url: http://wunderkraut.nl/
+  -
+    key: efocus
+    name: eFocus
+    url: http://www.efocus.nl/
+gold:
+  -
+    key: one-shoe
+    name: One Shoe
+    url: http://oneshoe.nl/nl
+  -
+    key: mixcom
+    name: MixCom
+    url: https://mixcom.nl/
+  -
+    key: hoppinger
+    name: Hoppinger
+    url: http://www.hoppinger.com/

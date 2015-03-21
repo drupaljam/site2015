@@ -49,6 +49,8 @@ require 'lib/compass_ext'
 #   end
 # end
 
+ sprockets.import_asset 'sponsors.css'
+
 set :css_dir, 'stylesheets'
 
 set :js_dir, 'javascripts'
