@@ -21,6 +21,8 @@
 @import "kart";
 @import "video";
 
+@import "sponsors";
+
 @import "footer";
 
 @import "print";
@@ -37,4 +39,6 @@
   @import "width-768/header";
 
   @import "width-768/kart";
+
+  @import "width-768/sponsors";
 }

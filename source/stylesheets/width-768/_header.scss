@@ -1,3 +1,11 @@
 section.header {
-  padding: 4em 0;
+  .section-inner {
+    &:first-child {
+      padding-top: 4em;
+    }
+
+    &:last-child {
+      padding-bottom: 4em;
+    }
+  }
 }

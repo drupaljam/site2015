@@ -1,6 +1,14 @@
 
 section.header {
-  padding: 3em 0;
+  .section-inner {
+    &:first-child {
+      padding-top: 3em;
+    }
+
+    &:last-child {
+      padding-bottom: 3em;
+    }
+  }
 }
 
 .logo {

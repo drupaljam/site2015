@@ -19,13 +19,22 @@ body {
 }
 
 section {
-  padding: 5em 0;
+  padding: 0;
   position: relative;
 
   .section-inner {
+    padding: 0;
     margin: 0 auto;
     max-width: 740px;
     padding: 0 1em;
+
+    &:first-child {
+      padding-top: 5em;
+    }
+
+    &:last-child {
+      padding-bottom: 5em;
+    }
   }
 
   &:after {

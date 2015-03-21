@@ -63,6 +63,10 @@ section.content {
       content: '> ';
       color: $color_main;
     }
+
+    &:first-child {
+      margin-top: 1em;
+    }
   }
   &.main {
     h1:before {

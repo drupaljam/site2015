@@ -1,6 +1,13 @@
 section {
-  padding-top: 6em;
-  padding-bottom: 6em;
+  .section-inner {
+    &:first-child {
+      padding-top: 6em;
+    }
+
+    &:last-child {
+      padding-bottom: 6em;
+    }
+  }
 
   &:after {
     padding-bottom: 4em;

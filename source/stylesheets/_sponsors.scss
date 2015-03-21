@@ -1,0 +1,53 @@
+
+.sponsors {
+  text-align: center;
+  background: #C0C0C0;
+  padding: 1em 1em 2em;
+
+  .sponsors-inner {
+    max-width: 940px;
+    margin: 0 auto;
+    background-image: asset-data-uri("sparkles.svg");
+    background-size: auto 3em;
+    background-position: right top;
+    background-repeat: no-repeat;
+  }
+
+  &:first-child {
+    .sponsors-inner {
+      padding-top: 5em;
+    }
+  }
+
+  &:last-child {
+    .sponsors-inner {
+      padding-bottom: 5em;
+    }
+  }
+
+  span {
+    display: block;
+    margin-bottom: 1em;
+    font-family: 'Boston Traffic';
+
+    &:before {
+      content: '> ';
+      color: $color_main;
+    }
+
+    &:after {
+      content: ' <';
+      color: $color_main;
+    }
+  }
+
+  margin: 2em 0;
+
+  &:first-child {
+    margin-top: 0;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
