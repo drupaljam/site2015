@@ -49,9 +49,9 @@ require 'lib/compass_ext'
 #   end
 # end
 
-sprockets.import_asset 'sponsors.css'
+sprockets.import_asset 'sponsor-logos.css'
 
-ignore 'stylesheets/sponsors.scss.erb'
+ignore 'stylesheets/sponsor-logos.scss.erb'
 
 set :css_dir, 'stylesheets'
 
