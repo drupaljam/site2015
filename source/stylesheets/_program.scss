@@ -1,16 +1,24 @@
 
-$program-quarter-width: 5em;
-$program-slot-height: 3em;
-$program-rooms-width: $program-quarter-width;
+$program-quarter-width: 7em;
+$program-slot-height: 6em;
+$program-rooms-width: 5em;
+
+$program-space-between-slots: 0.2em;
 
 $program-rooms: 5;
 $program-quarters: 34;
 
+$program-slot-padding: $program-space-between-slots / 2;
+
 .program-wrapper {
-  // padding-left: $program-rooms-width;
-  width: 100%;
   padding-left: $program-rooms-width;
   position: relative;
+
+  font-size: 0.5em;
+  line-height: 1.5em;
+
+  margin-left: -2em;
+  margin-right: -2em;
 
   .program {
     width: 0;
@@ -24,30 +32,34 @@ $program-quarters: 34;
     left: 0;
     top: 0;
     z-index: 10;
-    padding-top: 1.7em;
+    padding-top: 1.5em + $program-slot-padding;
     background: $color-main;
 
     .program-room {
       height: $program-slot-height;
       width: $program-rooms-width;
-      padding: 0.1em;
+      padding: $program-slot-padding $program-slot-padding $program-slot-padding 0;
 
       .program-room-inner {
         background: $color-black;
         color: $color-white;
         width: 100%;
         height: 100%;
-      }      
+      }
     }
   }
 
   .program-global {
     position: absolute;
     left: 0;
-    top: 1.7em;
+    top: 1.5em + $program-slot-padding;
 
     .program-slot {
       height: ($program-rooms * $program-slot-height);
+
+      &.program-slot-type-empty {
+        height: 0;
+      }
     }
   }
 
@@ -57,7 +69,7 @@ $program-quarters: 34;
 
     .program-timeline-time {
       width: $program-quarter-width;
-      padding: 0.1em;
+      padding: 0 $program-slot-padding $program-slot-padding;
       float: left;
 
       .program-timeline-time-inner {
@@ -75,7 +87,7 @@ $program-quarters: 34;
 
   .program-slot {
     height: $program-slot-height;
-    padding: 0.1em;
+    padding: $program-slot-padding;
     float: left;
 
     @for $i from 1 through $program-quarters {
