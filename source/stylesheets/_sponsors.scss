@@ -28,7 +28,8 @@
   span {
     display: block;
     margin-bottom: 1em;
-    font-family: 'Boston Traffic';
+    @include boston-traffic;
+    font-size: 0.7em;
 
     &:before {
       content: '> ';
@@ -49,5 +50,17 @@
 
   &:last-child {
     margin-bottom: 0;
+  }
+
+  .sponsor {
+    display: inline-block;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    margin: 1em;
+    text-decoration: none;
+    text-indent: -9999px;
+
+    font-size: 0.85em;
   }
 }

@@ -17,16 +17,9 @@
       $width: sqrt( <%= areas[type] %> * $ratio);
       $height: $width / $ratio;
 
-      display: inline-block;
       width: #{$width}em;
       height: #{$height}em;
-      background: asset-data-uri("<%= "sponsors/#{type}/#{sponsor['key']}.svg" %>");
-      background-size: 100% auto;
-      background-repeat: no-repeat;
-      background-position: 0 0;
-      margin: 1em;
-      text-decoration: none;
-      text-indent: -9999px;
+      background-image: asset-data-uri("<%= "sponsors/#{type}/#{sponsor['key']}.svg" %>");
     }
   <% end %>
 <% end %>
