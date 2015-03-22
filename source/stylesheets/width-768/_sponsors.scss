@@ -1,0 +1,11 @@
+.sponsors {
+  padding: 4em 1em;
+
+  &:first-child {
+    padding-top: 6em;
+  }
+
+  &:last-child {
+    padding-bottom: 6em;
+  }
+}

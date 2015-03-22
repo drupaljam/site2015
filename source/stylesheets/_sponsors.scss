@@ -1,8 +1,8 @@
 
 .sponsors {
   text-align: center;
-  padding: 1em 1em 2em;
   background: #eee;
+  padding: 3em 1em;
 
   .sponsors-inner {
     max-width: 940px;
@@ -27,7 +27,7 @@
 
   span {
     display: block;
-    margin-bottom: 1em;
+    margin-bottom: 2em;
     @include boston-traffic;
     font-size: 0.7em;
 
