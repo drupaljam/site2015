@@ -25,6 +25,12 @@
 
 @import "print";
 
+@media only screen and (min-width: 480px) {
+  @import "width-480/content";
+  @import "width-480/intro";
+  @import "width-480/button";
+}
+
 @media only screen and (min-width: 768px) {
   @import "width-768/base";
   @import "width-768/layout";

@@ -4,9 +4,12 @@ a.button {
   &, &:active, &:visited {
     display: inline-block;
     @include boston-traffic;
-    font-size: 1.4em;
+    
+    font-size: 1em;
     line-height: 1.2em;
+    
     padding: 0.5em 0.5em 0.5em 2em;
+
     color: black;
     text-decoration: none;
     border: 3px solid $color_black;
