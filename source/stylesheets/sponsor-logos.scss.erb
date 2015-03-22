@@ -9,8 +9,8 @@
   }
 %>
 
-<% data.sponsors.each do |type, sponsors| %>
-  <% sponsors.each do | sponsor| %>
+<% data.sponsors.each do |type, sponsor_type_info| %>
+  <% sponsor_type_info['sponsors'].each do | sponsor| %>
     .sponsor-<%= sponsor['key'] %> {
       $ratio: image-width("<%= "sponsors/#{type}/#{sponsor['key']}.svg" %>") / image-height("<%= "sponsors/#{type}/#{sponsor['key']}.svg" %>");
 

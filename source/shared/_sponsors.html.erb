@@ -1,7 +1,7 @@
 <div class="sponsors">
   <div class="sponsors-inner">
-    <span>Sponsoren van DrupalJam 2015</span>
-    <% data.sponsors[sponsor_type].each do |sponsor| %>
+    <span><%= data.sponsors[sponsor_type]['human'] %>sponsoren</span>
+    <% data.sponsors[sponsor_type]['sponsors'].each do |sponsor| %>
       <a href="<%= sponsor['url'] %>" class="sponsor sponsor-<%= sponsor['key'] %>"><%= sponsor['name'] %></a>  
     <% end %>
   </div>
