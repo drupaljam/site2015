@@ -18,6 +18,14 @@ bronze:
       key: goal-gorilla
       name: GoalGorilla
       url: http://www.goalgorilla.com/
+    -
+      key: wowww
+      name: Wowww!
+      url: http://www.wowwww.nl/
+    -
+      key: icatt
+      name: ICATT
+      url: http://www.icatt.nl/
 silver:
   human: Zilver
   sponsors:
@@ -60,3 +68,7 @@ gold:
       key: hoppinger
       name: Hoppinger
       url: http://www.hoppinger.com/
+    -
+      key: acquia
+      name: Acquia
+      url: https://www.acquia.com/
