@@ -1,9 +1,12 @@
 .sponsors {
-  span {
+  .title-wrapper {
+    margin-bottom: 4em;
+  }
+  span.title {
     font-size: 1em;
   }
 
-  padding: 4em 1em;
+  padding: 2em 1em;
 
   &:first-child {
     padding-top: 6em;

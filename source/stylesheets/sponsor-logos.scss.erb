@@ -10,12 +10,21 @@
 %>
 
 <% data.sponsors.each do |type, sponsor_type_info| %>
+  $height: 0; // width / height
+
+  <% sponsor_type_info['sponsors'].each do | sponsor| %>
+    $ratio: image-width("<%= "sponsors/#{type}/#{sponsor['key']}.svg" %>") / image-height("<%= "sponsors/#{type}/#{sponsor['key']}.svg" %>");
+    $width: sqrt( <%= areas[type] %> * $ratio);
+    $height: max($height, $width / $ratio);
+  <% end %>
+
+
   <% sponsor_type_info['sponsors'].each do | sponsor| %>
     .sponsor-<%= sponsor['key'] %> {
       $ratio: image-width("<%= "sponsors/#{type}/#{sponsor['key']}.svg" %>") / image-height("<%= "sponsors/#{type}/#{sponsor['key']}.svg" %>");
 
       $width: sqrt( <%= areas[type] %> * $ratio);
-      $height: $width / $ratio;
+      // $height: $width / $ratio;
 
       width: #{$width}em;
       height: #{$height}em;
