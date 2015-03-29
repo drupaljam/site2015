@@ -72,3 +72,11 @@ gold:
       key: acquia
       name: Acquia
       url: https://www.acquia.com/
+
+platinum:
+  human: Platinum
+  sponsors:
+    -
+      key: finalist
+      name: Finalist
+      url: http://www.finalist.nl
