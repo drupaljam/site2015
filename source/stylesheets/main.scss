@@ -1,10 +1,4 @@
-/*! HTML5 Boilerplate v5.0.0 | MIT License | http://h5bp.com/ */
-
-/*
- * What follows is the result of much research on cross-browser styling.
- * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
- * Kroc Camen, and the H5BP dev community and team.
- */
+@import "compass/utilities/general/clearfix";
 
 @import "variables";
 @import "fonts";
@@ -23,6 +17,7 @@
 @import "speakers";
 
 @import "sponsors";
+@import "badges";
 
 @import "footer";
 
@@ -48,4 +43,5 @@
   @import "width-768/kart";
 
   @import "width-768/sponsors";
+  @import "width-768/badges";
 }

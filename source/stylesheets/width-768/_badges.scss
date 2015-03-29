@@ -1,0 +1,9 @@
+
+.badge-types {
+  @include pie-clearfix;
+}
+
+.badge-type {
+  float: left;
+  width: 50%;
+}

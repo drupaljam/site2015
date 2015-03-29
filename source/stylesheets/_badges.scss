@@ -1,0 +1,27 @@
+
+.badge-type {
+  margin-bottom: 2em;
+  padding: 1em;
+
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  input {
+    background: transparent;
+    border: 1px solid $color-black;
+    width: 100%;
+    outline: none;
+    padding: 0.5em;
+  }
+
+  &.dark {
+    background: #555;
+    input {
+      border-color: $color-white;
+      color: $color-white;
+    }
+  }
+}
