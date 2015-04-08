@@ -26,6 +26,30 @@ bronze:
       key: icatt
       name: ICATT
       url: http://www.icatt.nl/
+    -
+      key: clockwork
+      name: Clockwork
+      url: http://www.clockwork.nl/
+    -
+      key: compubase
+      name: CompuBase
+      url: https://www.compubase.nl/
+    -
+      key: true
+      name: True
+      url: http://www.true.nl/
+    -
+      key: voys
+      name: Voys
+      url: https://www.voys.nl/
+    -
+      key: your-source
+      name: Your Source
+      url: https://www.your-source.nl/
+    -
+      key: youwe
+      name: Youwe
+      url: http://www.youwe.nl/
 silver:
   human: Zilver
   sponsors:
