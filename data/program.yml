@@ -17,7 +17,7 @@ global:
       type: plenair
 rooms:
   -
-    name: Room 1
+    name: Hal Finalist
     slots:
       - 
         from: 9:45

@@ -1,7 +1,7 @@
 
 $program-quarter-width: 7em;
 $program-slot-height: 6em;
-$program-rooms-width: 5em;
+$program-rooms-width: 6em;
 
 $program-space-between-slots: 0.2em;
 
@@ -45,6 +45,7 @@ $program-slot-padding: $program-space-between-slots / 2;
         color: $color-white;
         width: 100%;
         height: 100%;
+        padding: 0.5em;
       }
     }
   }
@@ -53,6 +54,11 @@ $program-slot-padding: $program-space-between-slots / 2;
     position: absolute;
     left: 0;
     top: 1.5em + $program-slot-padding;
+    height: 0;
+
+    .program-slots {
+      height: 0;
+    }
 
     .program-slot {
       height: ($program-rooms * $program-slot-height);
@@ -94,6 +100,10 @@ $program-slot-padding: $program-space-between-slots / 2;
       &.program-slot-size-#{$i} { width: $program-quarter-width * $i; }
     }
 
+    .program-slot-expanded {
+      display: none;
+    }
+
     .program-slot-inner {
       height: 100%;
       width: 100%;
@@ -101,6 +111,19 @@ $program-slot-padding: $program-space-between-slots / 2;
       text-align: center;
       background: white;
       overflow: hidden;
+
+      h3 {
+        margin: 0;
+        height: 3em;
+        font-size: 1em;
+        line-height: 1.5em;
+      }
+      p {
+        margin: 0;
+        font-size: 1em;
+        line-height: 1.5em;
+        text-transform: uppercase;
+      }
     }
   }
 }
