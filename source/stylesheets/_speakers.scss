@@ -2,7 +2,7 @@
   .speaker-inner {
     background: $color-main;
     position: relative;
-    padding: 2em 1em 6em 1em;
+    padding: 2em 1em 8em 1em;
     margin-bottom: 2em;
 
     .image {
@@ -40,7 +40,7 @@
       content: '';
       width: 100%;
       padding-bottom: 1em;
-      background-image: asset-data-uri('border-top.svg');
+      background-image: asset-data-uri('border-top-white.svg');
       background-size: auto 100%;
       background-position: top center;
       position: absolute;
@@ -48,6 +48,25 @@
       top: 0;
       right: 0;
       z-index: 10;
+    }
+  }
+
+  &.speakers-keynote {
+    .speaker-inner {
+      background: $color-white;
+      .image {
+        background: $color-main;
+      }
+
+      h3 {
+        &:before {
+          color: $color-main;
+        }
+      }
+
+      &:before {
+        background-image: asset-data-uri('border-top-main.svg');
+      }
     }
   }
 }
