@@ -7,10 +7,11 @@
   </div>
   <div class="program">
     <div class="program-timeline">
-      <% (program['from']...program['to']).step(15*60).each do |t| %>
-        <div class="program-timeline-time">
+      <% program_time_columns(program).each do |t| %>
+        <% size = ((t['to'] - t['from']) / (15 * 60)).floor %>
+        <div class="program-timeline-time program-timeline-time-size-<%= size %>">
           <div class="program-timeline-time-inner">
-            <%= (Time.new(2015, 4, 30, 0 , 0, 0) + t).strftime('%k:%M') %>
+            <%= (Time.new(2015, 4, 30, 0 , 0, 0) + t['from']).strftime('%k:%M') %>
           </div>
         </div>
       <% end %>

@@ -22,4 +22,28 @@ module CustomHelpers
       result << slot
     end
   end
+
+  def program_time_columns(program)
+    (program['from']...program['to']).step(15*60).reduce([]) do |result, t|
+      from = t
+      to = t + 15*60
+
+      split = result.empty? || program['rooms'].any? do |room|
+        room['slots'].any? do |slot|
+          (slot['from'] == from) || (slot['to'] == from)
+        end
+      end
+      
+      if split
+        result << {
+          'from' => from,
+          'to' => to
+        }
+        next result
+      end
+
+      result.last['to'] = to
+      next result
+    end
+  end
 end
