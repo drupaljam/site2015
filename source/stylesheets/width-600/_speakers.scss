@@ -1,0 +1,11 @@
+.speakers {
+  @include clearfix;
+  margin-left: -1em;
+  margin-right: -1em;
+
+  .speaker {
+    float: left;
+    width: 50%;
+    padding: 0 1em;
+  }
+}

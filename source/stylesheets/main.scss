@@ -20,6 +20,7 @@
 @import "button";
 @import "kart";
 @import "video";
+@import "speakers";
 
 @import "sponsors";
 
@@ -33,6 +34,10 @@
   @import "width-480/button";
 
   @import "width-480/sponsors";
+}
+
+@media only screen and (min-width: 600px) {
+  @import "width-600/speakers";
 }
 
 @media only screen and (min-width: 768px) {

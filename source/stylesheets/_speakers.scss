@@ -1,0 +1,53 @@
+.speakers {
+  .speaker-inner {
+    background: $color-main;
+    position: relative;
+    padding: 2em 1em 6em 1em;
+    margin-bottom: 2em;
+
+    .image {
+      background: $color-white;
+      padding: 1em;
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    h2 {
+      margin: 0.5em 0 0;
+    }
+
+    p {
+      margin: 0;
+    }
+
+    h3 {
+      @include boston-traffic;
+
+      &:before {
+        content: '> ';
+        color: $color-white;
+      }
+
+      position: absolute;
+      left: 1em; right: 1em;
+      bottom: 0;
+    }
+
+    &:before {
+      content: '';
+      width: 100%;
+      padding-bottom: 1em;
+      background-image: asset-data-uri('border-top.svg');
+      background-size: auto 100%;
+      background-position: top center;
+      position: absolute;
+      left: 0;
+      top: 0;
+      right: 0;
+      z-index: 10;
+    }
+  }
+}
