@@ -1,0 +1,50 @@
+---
+title: "Badges"
+---
+
+<section class="white content"><div class="section-inner">
+  <div class="section-content">
+    <h1>Badges</h1>
+
+    <p>Wil je op je eigen site laten zien dat je naar DrupalJam 2015 gaat,
+      DrupalJam 2015 sponsort of je als vrijwilliger inzet? Met deze badges kun
+      je dat doen!
+    </p>
+
+    <p>
+      Elke badge is er voor lichte en donkere achtergronden. Als je de img tag
+      die onder elke badge staat op je site plakt, krijg je daar de badge die je
+      hebben wilt. De afbeeldingen zijn SVG, dus oneindig schaalbaar. Je kunt de
+      width en height property van de tag dus naar hartelust aanpassen. Let wel
+      op dat de aspect ratio goed blijft. Als je liever PNG dan SVG gebruikt,
+      kan dat ook. Vervang in de url de extensie (.svg) naar .png, dan krijg je
+      de PNG afbeelding. Die zijn exact 220 bij 100 pixels, dus niet groter
+      schaalbaar. Als je site HTTPS gebruikt, kun je het beste de afbeelding 
+      downloaden en op je eigen server uploaden, want de site van DrupalJam
+      gebruikt geen HTTPS.
+    </p>
+    <% 
+      {
+        attendee: 'Ik kom naar DrupalJam 2015',
+        volunteer: 'Ik ben vrijwilliger op DrupalJam 2015',
+        bronze: 'Ik ben bronssponsor voor DrupalJam 2015',
+        silver: 'Ik ben zilversponsor voor DrupalJam 2015',
+        gold: 'Ik ben goudsponsor voor DrupalJam 2015',
+        platinum: 'Ik ben platinumsponsor voor DrupalJam 2015',
+      }.each do |key, label| %>
+      <div class="badge">
+        <h2><%= label %></h2>
+
+        <div class="badge-types">
+          <% {light: 'Lichte achtergrond', dark: 'Donkere achtergrond'}.each do |color, color_label| %>
+            <div class="badge-type <%= color %>">
+              <img src="<%= image_path("badges/#{key}-#{color}.svg") %>">
+
+              <input type="text" value="<%= h "<img src=\"http://drupaljam.nl#{image_path("badges/#{key}-#{color}.svg")}\" width=\"220\" height=\"100\">" %>">
+            </div>
+          <% end %>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div></section>

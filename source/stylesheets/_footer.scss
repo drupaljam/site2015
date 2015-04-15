@@ -13,6 +13,11 @@ section.footer {
 
     &.links {
       margin-top: 2em;
+
+      a {
+        display: inline-block;
+        margin-right: 1em;
+      }
     }
 
     a, a:hover, a:visited, a:active {
