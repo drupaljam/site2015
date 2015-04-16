@@ -10,6 +10,10 @@ $program-quarters: 34;
 
 $program-slot-padding: $program-space-between-slots / 2;
 
+body.slot-open {
+  overflow: hidden;
+}
+
 .program-wrapper {
   padding-left: $program-rooms-width;
   position: relative;
@@ -134,23 +138,42 @@ $program-slot-padding: $program-space-between-slots / 2;
       left: 0;
       bottom: 0;
       right: 0;
-      background: $color-white;
+      background: $color-black;
       z-index: 20;
 
-      padding: 4em 1em 1em;
+      .program-slot-expanded-inner {
+        position: relative;
+        background-color: $color-white;
+        height: 100%;
+        padding: 3em 0 0;
 
-      &:before {
-        content: '';
-        width: 100%;
-        padding-bottom: 2em;
-        background-image: asset-data-uri('border-top-main.svg');
-        background-size: auto 100%;
-        background-position: top center;
-        position: absolute;
-        left: 0;
-        top: 0;
-        right: 0;
-        z-index: 21;
+        font-size: (1em / 0.7);
+        line-height: 1.5em;
+
+        max-width: 700px;
+        margin: 0 auto;
+
+
+        &:before {
+          content: '';
+          width: 100%;
+          padding-bottom: 2em;
+          background-image: asset-data-uri('border-top-main.svg');
+          background-size: auto 100%;
+          background-position: top center;
+          position: absolute;
+          left: 0;
+          top: 0;
+          right: 0;
+          z-index: 21;
+        }
+
+        .program-slot-expanded-content {
+          padding: 1em;
+          width: 100%;
+          height: 100%;
+          overflow-y: scroll;
+        }
       }
     }
 

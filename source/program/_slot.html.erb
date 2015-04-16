@@ -8,14 +8,14 @@
       <% end %>
     </div>
     <% if slot['description'] || (slot['speaker'] && size < 2) %>
-      <div class="program-slot-expanded">
+      <div class="program-slot-expanded"><div class="program-slot-expanded-inner"><div class="program-slot-expanded-content">
         <h3><%= slot['title'] %></h3>
         <p class="speaker">
           <%= (Time.new(2015, 4, 30, 0 , 0, 0) + slot['from']).strftime('%k:%M') %> - <%= (Time.new(2015, 4, 30, 0 , 0, 0) + slot['to']).strftime('%k:%M') %>
           <%= slot['speaker'] ? " &mdash; #{slot['speaker']}" : '' %>
         </p>
         <p><%= slot['description'] %></p>
-      </div>
+      </div></div></div>
     <% end %>
   <% end %>
 </div>
