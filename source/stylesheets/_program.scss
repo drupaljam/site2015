@@ -1,0 +1,237 @@
+
+$program-quarter-width: 6em;
+$program-slot-height: 6em;
+$program-rooms-width: 4em;
+
+$program-space-between-slots: 0.2em;
+
+$program-rooms: 5;
+$program-quarters: 34;
+
+$program-slot-padding: $program-space-between-slots / 2;
+
+body.slot-open {
+  overflow: hidden;
+}
+
+.program-wrapper {
+  padding-left: $program-rooms-width;
+  position: relative;
+
+  font-size: 0.7em;
+  line-height: 1.5em;
+
+  margin-left: (-1em / 0.7);
+  margin-right: (-1em / 0.7);
+
+  -webkit-font-smoothing: auto;
+  font-smoothing: auto;
+
+  .program {
+    width: 0;
+    padding-right: 100%;
+    overflow-x: scroll;
+    position: relative;
+  }
+
+  .program-rooms {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    padding-top: 1.5em + $program-slot-padding + ($program-rooms-width / 2);
+    height: 1.5em + $program-slot-padding + ($program-rooms * $program-slot-height);
+    background: $color-main;
+    width: $program-rooms-width;
+
+    .program-room {
+      width: $program-slot-height;
+      height: $program-rooms-width;
+      -webkit-transform: rotate(-90deg);
+      -moz-transform: rotate(-90deg);
+      -ms-transform: rotate(-90deg);
+      -o-transform: rotate(-90deg);
+      transform: rotate(-90deg);
+      -webkit-transform-origin: ($program-rooms-width / 2) ($program-rooms-width / 2);
+      -moz-transform-origin: ($program-rooms-width / 2) ($program-rooms-width / 2);
+      -ms-transform-origin: ($program-rooms-width / 2) ($program-rooms-width / 2);
+      -o-transform-origin: ($program-rooms-width / 2) ($program-rooms-width / 2);
+      transform-origin: ($program-rooms-width / 2) ($program-rooms-width / 2);
+
+      border-color: $color-main;
+      border-style: solid;
+      border-width: 0 $program-slot-padding $program-slot-padding $program-slot-padding;
+      background: $color-black;
+      padding: 0.5em;
+      margin-bottom: $program-slot-height - $program-rooms-width;
+
+      .program-room-inner {
+        // background: $color-black;
+        color: $color-white;
+        text-align: center;
+        // width: 100%;
+        // height: 100%;
+        
+        //ransform: rotate(-90deg);
+        // transform-origin: bottom left;
+      }
+    }
+  }
+
+  .program-global {
+    position: absolute;
+    left: 0;
+    top: 1.5em + $program-slot-padding;
+    height: 0;
+
+    .program-slots {
+      height: 0;
+    }
+
+    .program-slot {
+      height: ($program-rooms * $program-slot-height);
+
+      &.program-slot-type-empty {
+        height: 0;
+      }
+    }
+  }
+
+  .program-timeline {
+    @include clearfix;
+    width: ($program-quarters * $program-quarter-width);
+
+    .program-timeline-time {
+      width: $program-quarter-width;
+      padding: 0 $program-slot-padding $program-slot-padding;
+      float: left;
+
+      @for $i from 1 through $program-quarters {
+        &.program-timeline-time-size-#{$i} { width: $program-quarter-width * $i; }
+      }
+
+      .program-timeline-time-inner {
+        background: $color-black;
+        padding: 0 0.5em;
+        color: white;
+        text-align: left;
+      }
+    }
+  }
+
+  .program-slots {
+    @include clearfix;
+    width: ($program-quarters * $program-quarter-width);
+  }
+
+  .program-slot {
+    height: $program-slot-height;
+    padding: $program-slot-padding;
+    float: left;
+
+    @for $i from 1 through $program-quarters {
+      &.program-slot-size-#{$i} { width: $program-quarter-width * $i; }
+    }
+
+    .program-slot-expanded {
+      display: none; // default, changed by JS
+
+      position: fixed;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      background: $color-main;
+      z-index: 20;
+
+      .program-slot-expanded-inner {
+        position: relative;
+        background-color: $color-white;
+        height: 100%;
+        padding: 3em 0 0;
+
+        font-size: (1em / 0.7);
+        line-height: 1.5em;
+
+        max-width: 700px;
+        margin: 0 auto;
+
+        p.time {
+          margin: 0 0 0.5em;
+          background: $color-black;
+          color: $color-white;
+          padding: 0 0.5em;
+          margin-left: -0.5em;
+          margin-right: -0.5em;
+        }
+
+        h3 {
+          font-size: 1.5em;
+          line-height: 1.2em;
+          height: (3em * 1.2);
+        }
+
+
+        &:before {
+          content: '';
+          width: 100%;
+          padding-bottom: 2em;
+          background-image: asset-data-uri('border-top-main.svg');
+          background-size: auto 100%;
+          background-position: top center;
+          position: absolute;
+          left: 0;
+          top: 0;
+          right: 0;
+          z-index: 21;
+        }
+
+        .program-slot-expanded-content {
+          padding: 1em;
+          width: 100%;
+          height: 100%;
+          overflow-y: auto;
+        }
+      }
+    }
+
+    .program-slot-inner {
+      height: 100%;
+      width: 100%;
+      padding: 0.25em;
+      text-align: left;
+      background: white;
+      overflow: hidden;
+    }
+
+    &.clickable {
+      .program-slot-inner {
+        ::-moz-selection {
+          background: $color-white;
+          text-shadow: none;
+        }
+
+        ::selection {
+          background: $color-white;
+          text-shadow: none;
+        }
+
+        cursor: pointer;
+      }
+    }
+
+    p.speaker {
+      margin: 0;
+      font-size: 1em;
+      line-height: 1.2em;
+      text-transform: uppercase;
+      color: $color_antracite;
+    }
+    h3 {
+      margin: 0;
+      height: 3em;
+      font-size: 1em;
+      line-height: 1.5em;
+    }
+  }
+}

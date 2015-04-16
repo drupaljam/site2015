@@ -55,6 +55,10 @@ title: "Informatie"
     <p>
       De aanmeldingstermijn voor sessies is inmiddels gesloten. We zijn hard bezig om het programma samen te stellen en dit op de website te plaatsen.
     </p>
+
+    <% if data.respond_to?(:program) %>
+      <%= partial 'program/program', locals: {program: data.program } %>
+    <% end %>
   </div>
 
   <%= partial 'shared/sponsors', locals: {sponsor_type: 'bronze' } %>

@@ -1,0 +1,23 @@
+<% size = ((slot['to'] - slot['from']) / (15 * 60)).floor %>
+<div class="program-slot program-slot-size-<%= size %> program-slot-type-<%= slot['type'] %>">
+  <% if slot['type'] != 'empty' %>
+    <div class="program-slot-inner">
+      <h3><%= h slot['title'] %></h3>
+      <% if slot['speaker'] && size > 1 %>
+        <p class="speaker"><%= h slot['speaker']['first_name'] %><br><%= h slot['speaker']['last_name'] %></p>
+      <% end %>
+    </div>
+    <% if slot['description'] || (slot['speaker'] && size < 2) %>
+      <div class="program-slot-expanded"><div class="program-slot-expanded-inner"><div class="program-slot-expanded-content">
+        <p class="time"><%= (Time.new(2015, 4, 30, 0 , 0, 0) + slot['from']).strftime('%k:%M') %> - <%= (Time.new(2015, 4, 30, 0 , 0, 0) + slot['to']).strftime('%k:%M') %></p>
+        <h3><%= h slot['title'] %></h3>
+        <% if slot['speaker'] %>
+          <p class="speaker"><%=  "#{h slot['speaker']['first_name']} #{h slot['speaker']['last_name']}" %></p>
+        <% end %>
+        <% if slot['description'] %>
+          <p><%= h slot['description'] %></p>
+        <% end %>
+      </div></div></div>
+    <% end %>
+  <% end %>
+</div>
