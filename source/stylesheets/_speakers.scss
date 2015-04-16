@@ -24,12 +24,7 @@
     }
 
     h3 {
-      @include boston-traffic;
-
-      &:before {
-        content: '> ';
-        color: $color-white;
-      }
+      // @include boston-traffic;
 
       position: absolute;
       left: 1em; right: 1em;
@@ -56,12 +51,6 @@
       background: $color-white;
       .image {
         background: $color-main;
-      }
-
-      h3 {
-        &:before {
-          color: $color-main;
-        }
       }
 
       &:before {

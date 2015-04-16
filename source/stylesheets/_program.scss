@@ -141,7 +141,7 @@ body.slot-open {
       left: 0;
       bottom: 0;
       right: 0;
-      background: $color-black;
+      background: $color-main;
       z-index: 20;
 
       .program-slot-expanded-inner {
@@ -208,7 +208,7 @@ body.slot-open {
     p.speaker {
       margin: 0;
       font-size: 1em;
-      line-height: 1.5em;
+      line-height: 1.2em;
       text-transform: uppercase;
     }
     h3 {

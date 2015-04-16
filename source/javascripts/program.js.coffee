@@ -17,3 +17,5 @@ $(document).ready ->
     if e.keyCode == 27
       $('.program-slot:has(.program-slot-inner) .program-slot-expanded').hide()
       $('body').removeClass('slot-open')
+
+  
