@@ -35,50 +35,14 @@ title: "Informatie"
 <section class="main content">
   <div class="section-inner">
     <h1>Keynotes</h1>
-
-    <div class="speakers speakers-keynote">
-      <div class="speaker"><div class="speaker-inner">
-        <div class="image"><img src="<%= image_path 'keynote/bruce.jpg' %>"></div>
-        <h2>Bruce Lawson</h2>
-        <p class="bio">Bruce is een webstandaard op zichzelf, actief in HTML5 en diep betrokken in het open web. Bruce kent een paar HTML tags uit zijn hoofd!</p>
-        <h3>&lt;picture&gt; and friends: HTML responsive images</h3>
-      </div></div>
-      <div class="speaker"><div class="speaker-inner">
-        <div class="image"><img src="<%= image_path 'keynote/marco.jpg' %>"></div>
-        <h2>Marco Derksen</h2>
-        <p class="bio">Marco is fanatiek oprichter en beheerder van initiatieven in  de media: Upstream, Marketingfacts. Marco begrijpt nieuwe media.</p>
-        <h3>Opkomst van de platform­economie</h3>
-      </div></div>
-    </div>
+    <%= partial 'speakers/keynote' %>
   </div>
 </section>
 
 <section class="white content">
   <div class="section-inner">
     <h1>Featured Sprekers</h1>
-
-    <div class="speakers speakers-featured">
-      <div class="speaker"><div class="speaker-inner">
-        <div class="image"><img src="<%= image_path 'featured/jam.jpg' %>"></div>
-        <h2>Jeffrey Maguire</h2>
-        <h3>Why Drupal 8? Why now? PS - Drupal 7 is still awesome</h3>
-      </div></div>
-      <div class="speaker"><div class="speaker-inner">
-        <div class="image"><img src="<%= image_path 'featured/anton.jpg' %>"></div>
-        <h2>Anton Vanhoucke</h2>
-        <h3>Design en strategie in Scrum</h3>
-      </div></div>
-      <div class="speaker"><div class="speaker-inner">
-        <div class="image"><img src="<%= image_path 'featured/stephen.jpg' %>"></div>
-        <h2>Stephen Hay</h2>
-        <h3>Keep It Simple Stupid</h3>
-      </div></div>
-      <div class="speaker"><div class="speaker-inner">
-        <div class="image"><img src="<%= image_path 'featured/ben.jpg' %>"></div>
-        <h2>Ben van 't Ende</h2>
-        <h3>Wees een held in jouw community</h3>
-      </div></div>
-    </div>
+    <%= partial 'speakers/featured' %>
   </div>
 </section>
 
