@@ -35,6 +35,7 @@
 
 @media only screen and (min-width: 600px) {
   @import "width-600/speakers";
+  @import "width-600/program";
 }
 
 @media only screen and (min-width: 768px) {
@@ -46,9 +47,4 @@
 
   @import "width-768/sponsors";
   @import "width-768/badges";
-  @import "width-768/program";
-}
-
-@media only screen and (min-height: 768px) {
-  @import "height-768/program";
 }
