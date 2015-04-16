@@ -50,6 +50,30 @@ bronze:
       key: youwe
       name: Youwe
       url: http://www.youwe.nl/
+    -
+      key: d-media
+      name: d-Media
+      url: http://d-media.nl/
+    -
+      key: ezcompany
+      name: ezCompany
+      url: http://www.ezcompany.nl/
+    -
+      key: frmwrk
+      name: FRMWRK
+      url: http://www.frmwrk.nl/
+    -
+      key: tam
+      name: Total Active Media
+      url: https://totalactivemedia.nl/
+    -
+      key: webscale
+      name: Webscale
+      url: https://www.webscale.nl/
+    -
+      key: wizzlern
+      name: Wizzlern
+      url: http://wizzlern.nl/
 silver:
   human: Zilver
   sponsors:
