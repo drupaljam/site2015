@@ -2,7 +2,7 @@
   .speaker-inner {
     background: $color-main;
     position: relative;
-    padding: 2em 1em 8em 1em;
+    padding: 2em 1em 7em 1em;
     margin-bottom: 2em;
 
     .image {
@@ -17,10 +17,12 @@
 
     h2 {
       margin: 0.5em 0 0;
+      text-transform: uppercase;
     }
 
     p {
       margin: 0;
+      line-height: 1.3em;
     }
 
     h3 {
@@ -28,10 +30,11 @@
 
       position: absolute;
       left: (1em / 1.5); right: (1em / 1.5);
-      bottom: 0;
+      bottom: 0.5em;
+      margin: 0;
 
-      font-size: 1.5em;
-      line-height: 1.2em;
+      font-size: 1.2em;
+      line-height: 1.3em;
       letter-spacing: -1px;
       &:before {
         content: '‘'
