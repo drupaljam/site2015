@@ -1,0 +1,10 @@
+.program-wrapper {
+  .program-slot {
+    .program-slot-expanded {
+      left: 25%;
+      right: 25%;
+      border-left: 3px solid $color-black;
+      border-right: 3px solid $color-black;
+    }
+  }
+}

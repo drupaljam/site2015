@@ -4,15 +4,16 @@
     <div class="program-slot-inner">
       <h3><%= slot['title'] %></h3>
       <% if slot['speaker'] && size > 1 %>
-        <p><%= slot['speaker'] %></p>
+        <p class="speaker"><%= slot['speaker'] %></p>
       <% end %>
     </div>
     <% if slot['description'] || (slot['speaker'] && size < 2) %>
       <div class="program-slot-expanded">
         <h3><%= slot['title'] %></h3>
-        <% if slot['speaker'] && size > 1 %>
-          <p><%= slot['speaker'] %></p>
-        <% end %>
+        <p class="speaker">
+          <%= (Time.new(2015, 4, 30, 0 , 0, 0) + slot['from']).strftime('%k:%M') %> - <%= (Time.new(2015, 4, 30, 0 , 0, 0) + slot['to']).strftime('%k:%M') %>
+          <%= slot['speaker'] ? " &mdash; #{slot['speaker']}" : '' %>
+        </p>
         <p><%= slot['description'] %></p>
       </div>
     <% end %>

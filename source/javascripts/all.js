@@ -3,3 +3,4 @@
 //= require sponsors
 //= require speakers
 //= require badges
+//= require program

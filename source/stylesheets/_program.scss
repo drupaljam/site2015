@@ -127,7 +127,31 @@ $program-slot-padding: $program-space-between-slots / 2;
     }
 
     .program-slot-expanded {
-      display: none;
+      display: none; // default, changed by JS
+
+      position: fixed;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      background: $color-white;
+      z-index: 20;
+
+      padding: 4em 1em 1em;
+
+      &:before {
+        content: '';
+        width: 100%;
+        padding-bottom: 2em;
+        background-image: asset-data-uri('border-top-main.svg');
+        background-size: auto 100%;
+        background-position: top center;
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        z-index: 21;
+      }
     }
 
     .program-slot-inner {
@@ -137,19 +161,35 @@ $program-slot-padding: $program-space-between-slots / 2;
       text-align: center;
       background: white;
       overflow: hidden;
+    }
 
-      h3 {
-        margin: 0;
-        height: 3em;
-        font-size: 1em;
-        line-height: 1.5em;
+    &.clickable {
+      .program-slot-inner {
+        ::-moz-selection {
+          background: $color-white;
+          text-shadow: none;
+        }
+
+        ::selection {
+          background: $color-white;
+          text-shadow: none;
+        }
+
+        cursor: pointer;
       }
-      p {
-        margin: 0;
-        font-size: 1em;
-        line-height: 1.5em;
-        text-transform: uppercase;
-      }
+    }
+
+    p.speaker {
+      margin: 0;
+      font-size: 1em;
+      line-height: 1.5em;
+      text-transform: uppercase;
+    }
+    h3 {
+      margin: 0;
+      height: 3em;
+      font-size: 1em;
+      line-height: 1.5em;
     }
   }
 }
