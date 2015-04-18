@@ -259,9 +259,9 @@ rooms:
         title: "Continious Integration"
         speaker:
           first_name: Bas
-          last_name: van der Heijde
+          last_name: van der Heijden
         type: community
-        description: "We nemen je mee over hoe CI je kan helpen als developer in het proces van ontwikkeling tot love brnagen, welke tools je hiervoor kan gebruiken en hoe deze je product beter gaan maken. Een must voor iedereen die voorspelbaar en risicoloos een project live wil brengen."
+        description: "We nemen je mee in hoe CI je kan helpen als developer in het proces van ontwikkeling tot live brengen, welke tools je hiervoor kan gebruiken en hoe deze je product beter gaan maken. Een must voor iedereen die voorspelbaar en risicoloos een project live wil brengen."
   -
     name: Acquia Zaal
     slots:
