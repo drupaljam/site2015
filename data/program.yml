@@ -234,8 +234,8 @@ rooms:
         to: 14:00
         title: "Centrale logging van meerdere Drupal sites"
         speaker:
-          first_name: Bas
-          last_name: van der Zalm
+          first_name: Patrick
+          last_name: Snoek
         type: community
         description: "De sessie gaat over het opzetten van een centraal logging systeem voor het monitoren van meerdere Drupal sites verspreid over verschillende servers. Tijdens deze sessie gaan we kort in op de gebruikte technologie (Logstash, Redis, ElasticSearch en Kibana) en onze bevindingen (best practices) om een dergelijjke setup snel en schaalbaar te maken en houden. De sessie is bedoeld voor ontwikkelaars met devops of sysadmin taken en bekendheid met de LAMP stack."
       - 
