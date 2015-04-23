@@ -154,6 +154,15 @@ rooms:
           last_name: Schuiling
         type: community
         description: "Sven vertelt over drie ingrediënten die aan de basis staan van een succesvolle website: de opdrachtgever, de eindgebruiker en de analytics. En hij leert je meteen ook hoe je meisjes of jongens kunt versieren bij het kampvuur."
+      - 
+        from: 14:15
+        to: 15:00
+        title: Wees een held in jouw community
+        speaker:
+          first_name: "Ben"
+          last_name: "van 't Ende"
+        type: featured
+        description: "De uitgebreide beschrijving van deze sessie volgt z.s.m."
       -
         from: 15:15
         to: 15:45
