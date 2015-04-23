@@ -17,6 +17,9 @@
         <% if slot['description'] %>
           <p><%= h slot['description'] %></p>
         <% end %>
+        <% if slot['type'] == 'sponsored' %>
+          <p>Dit is een gesponsorde sessie.</p>
+        <% end %>
       </div></div></div>
     <% end %>
   <% end %>

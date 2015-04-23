@@ -77,7 +77,7 @@ rooms:
           first_name: Michael
           last_name: Mol
         type: lightningtalk
-        description: "De uitgebreide beschrijving van deze sessie volgt z.s.m."
+        description: "Uitleg en demo van de Coffee module."
       - 
         from: 14:45
         to: 15:00
@@ -90,12 +90,12 @@ rooms:
       - 
         from: 15:00
         to: 15:45
-        title: Keep it Simple Stupid
+        title: Wees een held in jouw community
         speaker:
-          first_name: Stephen
-          last_name: Hay
+          first_name: "Ben"
+          last_name: "van 't Ende"
         type: featured
-        description: "Everyone talks about the benefits of simplicity. Yet many of us end up adding a heavy amount of complexity to inherently simple things. In fact, many web designers and developers end up spending significant amounts of project time undoing problems caused by complexities added early in the design process. In effect, we often ruin the things we build during the process of building them, but it doesn't have to be that way. In this session, Stephen looks at how and why we complicate things, and then looks at how an exaggerated application of progressive enhancement can help us maintain simplicity and increase value for the people using the things we make."
+        description: "Hoe lastig is het het beste uit jezelf naar boven te halen, je geduld te bewaren en mensen te helpen in jouw community? Een community is een verzameling van unieke individuen die samen aan een missie werken. In deze presentatie kijken we naar een aantal aspecten waarom mensen aan de zijlijn blijven staan (free-riden) en hoe we mensen kunnen motiveren deel te nemen en zelfs een held te zijn."
       - 
         from: 16:00
         to: 16:15
@@ -113,7 +113,7 @@ rooms:
       - 
         from: 16:30
         to: 17:15
-        title: "<picture> and friends HTML responsive images"
+        title: "Keynote: <picture> and friends HTML responsive images"
         speaker:
           first_name: Bruce
           last_name: Lawson
@@ -157,12 +157,12 @@ rooms:
       - 
         from: 14:15
         to: 15:00
-        title: Wees een held in jouw community
+        title: Keep it Simple Stupid
         speaker:
-          first_name: "Ben"
-          last_name: "van 't Ende"
+          first_name: Stephen
+          last_name: Hay
         type: featured
-        description: "De uitgebreide beschrijving van deze sessie volgt z.s.m."
+        description: "Everyone talks about the benefits of simplicity. Yet many of us end up adding a heavy amount of complexity to inherently simple things. In fact, many web designers and developers end up spending significant amounts of project time undoing problems caused by complexities added early in the design process. In effect, we often ruin the things we build during the process of building them, but it doesn't have to be that way. In this session, Stephen looks at how and why we complicate things, and then looks at how an exaggerated application of progressive enhancement can help us maintain simplicity and increase value for the people using the things we make."
       -
         from: 15:15
         to: 15:45
@@ -178,9 +178,12 @@ rooms:
       -
         from: 11:15
         to: 11:45
-        title: "Sponsored Session: OneShoe"
+        title: "Drupal Commerce voor 24/7 consumers"
+        speaker:
+          first_name: Dick Rensema
+          last_name: "& Jean Claude Pitcho"
         type: sponsored
-        description: "De uitgebreide beschrijving van deze sessie volgt z.s.m."
+        description: "De ’all-ways connected consumer’ is in principe 24/7 online: webshops staan dus voor de ultieme uitdaging om hun dienst en/of product aan te bieden nog voordat de klant er zelf om gevraagd heeft. Uitgebreide analytics en gedetailleerde customer journeys maken het mogelijk om steeds beter te anticiperen op de (latente) behoefte van de klant. Drupal Commerce biedt een uitstekend pakket om een webshop te ontwikkelen die content en functionaliteit samenbrengt tot een rijke e-commerce ervaring. Maar hoe werkt de opzet van een Drupal Commerce webshop in de praktijk? Welke tooling en aanvullende modules biedt Commerce Guys om de link te leggen met Drupal? Wat zijn de (on)mogelijkheden, tips en trucs wanneer je als developer aan de slag wilt met Drupal Commerce?"
       -
         from: 12:00
         to: 12:30
