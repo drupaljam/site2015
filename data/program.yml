@@ -32,7 +32,7 @@ rooms:
             first_name: Marco
             last_name: Derksen
         type: keynote
-        description: "De uitgebreide beschrijving van deze sessie volgt z.s.m."
+        description: "Dat de wereld is veranderd door de komst van digitale media is inmiddels wel duidelijk. Digitale media hebben de laatste jaren gezorgd voor een enorme verschuiving in de manier waarop mensen informatie zoeken, nieuws ontvangen, met elkaar communiceren en samenwerken. Dit heeft geleid tot hele andere spelregels voor organisaties. Welke organisaties hebben dit begrepen en wat kan de Drupaljam community daar van leren?"
       - 
         from: 11:00
         to: 11:45
@@ -50,7 +50,7 @@ rooms:
           first_name: Jeroen
           last_name: Bobbeldijk
         type: lightningtalk
-        description: "De uitgebreide beschrijving van deze sessie volgt z.s.m."
+        description: "Uitleg en demo van de Paragraphs module."
       - 
         from: 12:15
         to: 12:30
@@ -59,7 +59,7 @@ rooms:
           first_name: Arjan
           last_name: van der Pol
         type: lightningtalk
-        description: "De uitgebreide beschrijving van deze sessie volgt z.s.m."
+        description: "Uitleg en demo van de Drupal voor Gemeenten distributie."
       - 
         from: 13:30
         to: 14:15
@@ -86,7 +86,7 @@ rooms:
           first_name: Bram
           last_name: ten Hove
         type: lightningtalk
-        description: "De uitgebreide beschrijving van deze sessie volgt z.s.m."
+        description: "Uitleg en demo van de Search Krumo module."
       - 
         from: 15:00
         to: 15:45
@@ -95,7 +95,7 @@ rooms:
           first_name: Stephen
           last_name: Hay
         type: featured
-        description: "De uitgebreide beschrijving van deze sessie volgt z.s.m."
+        description: "Everyone talks about the benefits of simplicity. Yet many of us end up adding a heavy amount of complexity to inherently simple things. In fact, many web designers and developers end up spending significant amounts of project time undoing problems caused by complexities added early in the design process. In effect, we often ruin the things we build during the process of building them, but it doesn't have to be that way. In this session, Stephen looks at how and why we complicate things, and then looks at how an exaggerated application of progressive enhancement can help us maintain simplicity and increase value for the people using the things we make."
       - 
         from: 16:00
         to: 16:15
@@ -118,14 +118,14 @@ rooms:
           first_name: Bruce
           last_name: Lawson
         type: keynote
-        description: "De uitgebreide beschrijving van deze sessie volgt z.s.m."
+        description: "Amaze your friends, confound your enemies! Oh, and save bandwidth and speed up your site by sending the correctly-sized images for the device with HTML’s new responsive images capabilities. Bruce proposed the new element in 2011, and it’s just gone live in Opera and Chrome, and coming soon in Firefox, so learn all about it now and put use the techniques tomorrow."
       - 
         from: 17:15
         to: 17:30
         title: "Sluiting"
         type: plenair
   -
-    name: OneShoe Zaal
+    name: Mixcom Zaal
     slots:
       -
         from: 11:00
@@ -148,21 +148,12 @@ rooms:
       -
         from: 13:30
         to: 14:00
-        title: User Centric Design
+        title: "3 ingrediënten van een succesvolle website"
         speaker:
           first_name: Sven
           last_name: Schuiling
         type: community
-        description: "De uitgebreide beschrijving van deze sessie volgt z.s.m."
-      - 
-        from: 14:15
-        to: 15:00
-        title: Wees een held in jouw community
-        speaker:
-          first_name: "Ben"
-          last_name: "van 't Ende"
-        type: featured
-        description: "De uitgebreide beschrijving van deze sessie volgt z.s.m."
+        description: "Sven vertelt over drie ingrediënten die aan de basis staan van een succesvolle website: de opdrachtgever, de eindgebruiker en de analytics. En hij leert je meteen ook hoe je meisjes of jongens kunt versieren bij het kampvuur."
       -
         from: 15:15
         to: 15:45
@@ -173,7 +164,7 @@ rooms:
         type: community
         description: "De aankondiging van Backdrop CMS veroorzaakte behoorlijk wat opschudding in de Drupal community. Toch zijn forks een logisch gevolg van een gezond open source project. Is een skeptische blik op de onderliggende ideologie terecht? Of is het bewonderenswaardige dat er een eerste stable release uitgebracht is? Eerst testen, dan een mening vormen, dus hierbij een presentatie van mijn bevindingen."
   -
-    name: Mixcom Zaal
+    name: OneShoe Zaal
     slots:
       -
         from: 11:15
@@ -202,9 +193,12 @@ rooms:
       - 
         from: 14:30
         to: 15:00
-        title: "Sponsored Session: Uw sessie hier?"
-        type: sponsored
-        description: "Wilt u ook een sessie sponsoren, om bijvoorbeeld een case study te laten zien, of op een andere manier extra aandacht voor uw bedrijf te genereren. Neem dan contact met ons op."
+        title: "Drupal Training Day"
+        type: community
+        speaker:
+          first_name: Nancy
+          last_name: Beers
+        description: "Doelgroep: Iedereen die actief zijn/haar steentje wil bijdragen aan de groei van de Drupal Community en specifieker de groei van het aantal Drupaldevelopers. In 2014 hebben we met een groep van 9 vrijwilligers onder de vlag van Stichting Drupal Nederland een trainingsdag georganiseerd voor studenten en werkzoekenden. Deze dag is een gigantisch succes geworden en inmiddels staat de 2015 variant ook alweer in de steigers. Wat ga je oa. te weten komen? Wie, wat, waar en waarom Drupaltrainingday? Wat zijn de succesfactoren geweest van deze dag? Wat zijn de lessons learned geweest? Dromen en ambities!"
       -
         from: 15:15
         to: 15:45
@@ -213,7 +207,7 @@ rooms:
           first_name: Miechiel
           last_name: Schwartz
         type: community
-        description: "De uitgebreide beschrijving van deze sessie volgt z.s.m."
+        description: "Optimaliseer gebruikerservaring: gebruik CDN en boost performance! In deze sessie gaan we laten zien hoe je de prestatie van je website kunt verbeteren voor je eindgebruikers. Ook laten we hier de verschillende implementaties van verschillende cdn providers en hun voor en nadelen de revue paseren. "
   -
     name: Hoppinger Zaal
     slots:
