@@ -32,7 +32,7 @@ rooms:
             first_name: Marco
             last_name: Derksen
         type: keynote
-        description: "Dat de wereld is veranderd door de komst van digitale media is inmiddels wel duidelijk. Digitale media hebben de laatste jaren gezorgd voor een enorme verschuiving in de manier waarop mensen informatie zoeken, nieuws ontvangen, met elkaar communiceren en samenwerken. Dit heeft geleid tot hele andere spelregels voor organisaties. Welke organisaties hebben dit begrepen en wat kan de Drupaljam community daar van leren?"
+        description: "Dat de wereld is veranderd door de komst van digitale media is inmiddels wel duidelijk. Digitale media hebben de laatste jaren gezorgd voor een enorme verschuiving in de manier waarop mensen informatie zoeken, nieuws ontvangen, met elkaar communiceren en samenwerken. Dit heeft geleid tot hele andere spelregels voor organisaties. Welke organisaties hebben dit begrepen, en wat kan de Drupal community daar van leren?"
       - 
         from: 11:00
         to: 11:45
@@ -148,16 +148,16 @@ rooms:
       -
         from: 13:30
         to: 14:00
-        title: "3 ingrediënten van een succesvolle website"
-        speaker:
-          first_name: Sven
-          last_name: Schuiling
+        title: "Drupal Training Day"
         type: community
-        description: "Sven vertelt over drie ingrediënten die aan de basis staan van een succesvolle website: de opdrachtgever, de eindgebruiker en de analytics. En hij leert je meteen ook hoe je meisjes of jongens kunt versieren bij het kampvuur."
+        speaker:
+          first_name: Nancy
+          last_name: Beers
+        description: "Doelgroep: Iedereen die actief zijn/haar steentje wil bijdragen aan de groei van de Drupal Community en specifieker de groei van het aantal Drupaldevelopers. In 2014 hebben we met een groep van 9 vrijwilligers onder de vlag van Stichting Drupal Nederland een trainingsdag georganiseerd voor studenten en werkzoekenden. Deze dag is een gigantisch succes geworden en inmiddels staat de 2015 variant ook alweer in de steigers. Wat ga je oa. te weten komen? Wie, wat, waar en waarom Drupaltrainingday? Wat zijn de succesfactoren geweest van deze dag? Wat zijn de lessons learned geweest? Dromen en ambities!"
       - 
         from: 14:15
         to: 15:00
-        title: Keep it Simple Stupid
+        title: "Keep it Simple, Stupid"
         speaker:
           first_name: Stephen
           last_name: Hay
@@ -205,12 +205,12 @@ rooms:
       - 
         from: 14:30
         to: 15:00
-        title: "Drupal Training Day"
-        type: community
+        title: "3 ingrediënten van een succesvolle website"
         speaker:
-          first_name: Nancy
-          last_name: Beers
-        description: "Doelgroep: Iedereen die actief zijn/haar steentje wil bijdragen aan de groei van de Drupal Community en specifieker de groei van het aantal Drupaldevelopers. In 2014 hebben we met een groep van 9 vrijwilligers onder de vlag van Stichting Drupal Nederland een trainingsdag georganiseerd voor studenten en werkzoekenden. Deze dag is een gigantisch succes geworden en inmiddels staat de 2015 variant ook alweer in de steigers. Wat ga je oa. te weten komen? Wie, wat, waar en waarom Drupaltrainingday? Wat zijn de succesfactoren geweest van deze dag? Wat zijn de lessons learned geweest? Dromen en ambities!"
+          first_name: Sven
+          last_name: Schuiling
+        type: community
+        description: "Sven vertelt over drie ingrediënten die aan de basis staan van een succesvolle website: de opdrachtgever, de eindgebruiker en de analytics. En hij leert je meteen ook hoe je meisjes of jongens kunt versieren bij het kampvuur."
       -
         from: 15:15
         to: 15:45
@@ -262,7 +262,7 @@ rooms:
       -
         from: 15:00
         to: 15:45
-        title: "Continious Integration"
+        title: "Continuous Integration"
         speaker:
           first_name: Bas
           last_name: van der Heijden
