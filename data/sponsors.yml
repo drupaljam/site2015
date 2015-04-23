@@ -74,6 +74,18 @@ bronze:
       key: wizzlern
       name: Wizzlern
       url: http://wizzlern.nl/
+    -
+      key: burst
+      name: Burst
+      url: http://www.burst-digital.com/nl/home/
+    -
+      key: occhio
+      name: Occhio
+      url: http://www.occhio.nl/
+    -
+      key: oxilion
+      name: Oxilion
+      url: https://www.oxilion.nl/
 silver:
   human: Zilver
   sponsors:
