@@ -205,21 +205,21 @@ rooms:
       - 
         from: 14:30
         to: 15:00
-        title: "3 ingrediënten van een succesvolle website"
-        speaker:
-          first_name: Sven
-          last_name: Schuiling
-        type: community
-        description: "Sven vertelt over drie ingrediënten die aan de basis staan van een succesvolle website: de opdrachtgever, de eindgebruiker en de analytics. En hij leert je meteen ook hoe je meisjes of jongens kunt versieren bij het kampvuur."
-      -
-        from: 15:15
-        to: 15:45
         title: CDN
         speaker:
           first_name: Miechiel
           last_name: Schwartz
         type: community
         description: "Optimaliseer gebruikerservaring: gebruik CDN en boost performance! In deze sessie gaan we laten zien hoe je de prestatie van je website kunt verbeteren voor je eindgebruikers. Ook laten we hier de verschillende implementaties van verschillende cdn providers en hun voor en nadelen de revue paseren. "
+      -
+        from: 15:15
+        to: 15:45
+        title: "3 ingrediënten van een succesvolle website"
+        speaker:
+          first_name: Sven
+          last_name: Schuiling
+        type: community
+        description: "Sven vertelt over drie ingrediënten die aan de basis staan van een succesvolle website: de opdrachtgever, de eindgebruiker en de analytics. En hij leert je meteen ook hoe je meisjes of jongens kunt versieren bij het kampvuur."
   -
     name: Hoppinger Zaal
     slots:
