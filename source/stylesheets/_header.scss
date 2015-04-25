@@ -9,6 +9,11 @@ section.header {
       padding-bottom: 3em;
     }
   }
+
+  h1 {
+    @include boston-traffic;
+    margin: 2em 0 0;
+  }
 }
 
 .logo {

@@ -19,18 +19,7 @@
     <div class="wrapper">
       <section class="header"><div class="section-inner">
         <%= link_to '', 'index.html', class: 'logo' %>
-        <ul class="menu">
-          <% [
-               # 'index.html'
-             ].each do |path|
-              item = sitemap.find_resource_by_destination_path(path)
-              active = item == current_resource
-              attrs = Hash.new
-              attrs['class'] = 'active' if active
-          %>
-            <li><%= link_to item.data['title'], item.url, attrs %></li> 
-          <% end %>
-        </ul>
+        <h1>Het Drupal evenement van de Lage Landen</h1>
       </div></section>
 
       <%= yield %>

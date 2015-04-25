@@ -28,6 +28,8 @@ section {
     max-width: 740px;
     padding: 0 1em;
 
+    @include clearfix;
+
     &:first-child {
       padding-top: 5em;
     }
