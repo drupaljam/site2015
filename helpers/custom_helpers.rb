@@ -46,4 +46,10 @@ module CustomHelpers
       next result
     end
   end
+
+  def h1(title, key = nil)
+    key = title.parameterize
+
+    content_tag :h1, title, id: key
+  end
 end
