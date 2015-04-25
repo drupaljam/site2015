@@ -42,3 +42,19 @@ configure :build do
   # Or use a different image path
   # set :http_prefix, "/Content/images/"
 end
+
+
+after_build do |builder|
+  require 'fileutils'
+
+  app = builder.class.shared_instance
+  dir = Pathname(app.build_dir)
+
+  Dir[dir.join('images/badges/*.svg')].each do |src|
+    x = File.basename(src).split('.')
+    dest_name = x.first + '.png'
+    dest = File.join(File.dirname(src), dest_name)
+
+    FileUtils.cp src, dest
+  end
+end
