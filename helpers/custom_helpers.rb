@@ -62,6 +62,10 @@ module CustomHelpers
   end
 
   def image_url(source)
-    protocol + host_with_port + image_path(source)
+     absolute_url image_path(source)
+  end
+
+  def absolute_url(path)
+    protocol + host_with_port + path
   end
 end
