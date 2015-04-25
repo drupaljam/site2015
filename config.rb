@@ -12,6 +12,17 @@ set :images_dir, 'images'
 
 set :fonts_dir, 'fonts'
 
+# Used for generating absolute URLs
+set :protocol, "http://"
+# in our server configuration, this a quite reliable way of figuring out the hostname
+set :host, File.basename(File.dirname(File.dirname(__FILE__))) 
+set :port, 80
+
+configure :development do
+  set :host, Middleman::PreviewServer.host
+  set :port, Middleman::PreviewServer.port
+end
+
 # Build-specific configuration
 configure :build do
   # For example, change the Compass output style for deployment
