@@ -52,9 +52,12 @@ after_build do |builder|
 
   Dir[dir.join('images/badges/*.svg')].each do |src|
     x = File.basename(src).split('.')
-    dest_name = x.first + '.png'
-    dest = File.join(File.dirname(src), dest_name)
 
-    FileUtils.cp src, dest
+    src_path  = Dir[File.join(File.dirname(src), x.first.split('-').first(2).join('-') + '-*.png')].first
+
+    dest_name = x.first + '.png'
+    dest_path = File.join(File.dirname(src), dest_name)
+
+    FileUtils.cp src_path, dest_path
   end
 end
