@@ -1,5 +1,5 @@
 <% size = ((slot['to'] - slot['from']) / (15 * 60)).floor %>
-<div class="program-slot program-slot-size-<%= size %> program-slot-type-<%= slot['type'] %>">
+<div class="program-slot program-slot-size-<%= size %> program-slot-type-<%= slot['type'] %>"<%= slot['type'] != 'empty' ? " id=\"#{slot['title'].gsub('­', '').parameterize}\"" : '' %>>
   <% if slot['type'] != 'empty' %>
     <div class="program-slot-inner">
       <h3><%= h slot['title'] %></h3>
