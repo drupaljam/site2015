@@ -5,9 +5,6 @@ $(document).ready ->
   window.getNavigationURL = ->
     return window.location.pathname
 
-  unless $('h1[id]').length > 0
-    return
-
   activated = true
 
   window.disableNavigation = ->
@@ -15,6 +12,9 @@ $(document).ready ->
     return
   window.enableNavigation = ->
     activated = true
+    return
+
+  unless $('h1[id]').length > 0
     return
 
   window.getNavigationURL = ->
