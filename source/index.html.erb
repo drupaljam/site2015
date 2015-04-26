@@ -43,11 +43,11 @@ title: "Informatie"
     <p class="intro">
       Drupal bedenker en internationaal ondernemer Dries Buytaert, Marco Derksen (Marketingfacts) en Bruce Lawson (Opera) maken deel uit van het diverse programma. Verder zullen veel technische Drupal insights en online technologiën aan de orde komen. Daarnaast hebben we een aantal lightningtalks welke in het teken staan van modules van eigen bodem. 
     </p>
-
-    <% if data.respond_to?(:program) %>
-      <%= partial 'program/program', locals: {program: data.program } %>
-    <% end %>
   </div>
+  
+  <% if data.respond_to?(:program) %>
+    <%= partial 'program/program', locals: {program: data.program } %>
+  <% end %>
 
   <%= partial 'shared/sponsors', locals: {sponsor_type: 'bronze' } %>
 </section>
