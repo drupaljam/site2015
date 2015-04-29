@@ -40,7 +40,7 @@
 
   margin: 2em 0;
 
-  &:first-child {
+  .main-map-wrapper + &, &:first-child {
     margin-top: 0;
   }
 

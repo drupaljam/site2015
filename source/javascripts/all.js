@@ -5,3 +5,4 @@
 //= require speakers
 //= require badges
 //= require program
+//= require map
