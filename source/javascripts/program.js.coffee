@@ -50,6 +50,17 @@ $(document).ready ->
           , 100)
         slot.find('.program-slot-inner').click()
         return
+
+    # if we get here, we don't have hash that matches a slot
+    now = new Date
+    start = new Date(2015, 3, 30, 9, 0, 0)
+    end = new Date(2015, 3, 30, 17, 30, 0)
+    
+    if now >= start && now <= end
+      quarters = (end - start) / 1000 / 60 / 15
+      now_quarters = Math.floor((now - start) / 1000 / 60 / 15)
+      width = $('.program .program-slots').eq(0).width()
+      $('.program').scrollLeft(Math.floor(width / quarters * now_quarters))
   )()
 
   $(document).keyup (e) ->
