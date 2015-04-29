@@ -178,12 +178,12 @@ rooms:
       -
         from: 11:15
         to: 11:45
-        title: "Drupal Commerce voor 24/7 consumers"
+        title: Drupal in Outer Space
         speaker:
-          first_name: Dick Rensema
-          last_name: "& Jean Claude Pitcho"
-        type: sponsored
-        description: "De ’all-ways connected consumer’ is in principe 24/7 online: webshops staan dus voor de ultieme uitdaging om hun dienst en/of product aan te bieden nog voordat de klant er zelf om gevraagd heeft. Uitgebreide analytics en gedetailleerde customer journeys maken het mogelijk om steeds beter te anticiperen op de (latente) behoefte van de klant. Drupal Commerce biedt een uitstekend pakket om een webshop te ontwikkelen die content en functionaliteit samenbrengt tot een rijke e-commerce ervaring. Maar hoe werkt de opzet van een Drupal Commerce webshop in de praktijk? Welke tooling en aanvullende modules biedt Commerce Guys om de link te leggen met Drupal? Wat zijn de (on)mogelijkheden, tips en trucs wanneer je als developer aan de slag wilt met Drupal Commerce?"
+          first_name: Imre
+          last_name: Gmelig Meijling
+        type: community
+        description: "Vergroten van kansen voor het leveren van toegevoegde waarde, met Drupal. Er zijn genoeg genoeg harten te winnen om gave projecten op Drupal te doen! Hoe verkoop je Drupal, zonder er gebakken lucht van te maken? Een sessie voor Business owners, Drupal evangelisten, ondernemers en zaakvoerders die meer Drupal projecten willen doen voor klanten voor wie het platform van ondergeschikt belang is."
       -
         from: 12:00
         to: 12:30
@@ -253,12 +253,12 @@ rooms:
       - 
         from: 14:15
         to: 14:45
-        title: Drupal in Outer Space
+        title: "Drupal Commerce voor 24/7 consumers"
         speaker:
-          first_name: Imre
-          last_name: Gmelig Meijling
-        type: community
-        description: "Vergroten van kansen voor het leveren van toegevoegde waarde, met Drupal. Er zijn genoeg genoeg harten te winnen om gave projecten op Drupal te doen! Hoe verkoop je Drupal, zonder er gebakken lucht van te maken? Een sessie voor Business owners, Drupal evangelisten, ondernemers en zaakvoerders die meer Drupal projecten willen doen voor klanten voor wie het platform van ondergeschikt belang is."
+          first_name: Dick Rensema
+          last_name: "& Jean Claude Pitcho"
+        type: sponsored
+        description: "De ’all-ways connected consumer’ is in principe 24/7 online: webshops staan dus voor de ultieme uitdaging om hun dienst en/of product aan te bieden nog voordat de klant er zelf om gevraagd heeft. Uitgebreide analytics en gedetailleerde customer journeys maken het mogelijk om steeds beter te anticiperen op de (latente) behoefte van de klant. Drupal Commerce biedt een uitstekend pakket om een webshop te ontwikkelen die content en functionaliteit samenbrengt tot een rijke e-commerce ervaring. Maar hoe werkt de opzet van een Drupal Commerce webshop in de praktijk? Welke tooling en aanvullende modules biedt Commerce Guys om de link te leggen met Drupal? Wat zijn de (on)mogelijkheden, tips en trucs wanneer je als developer aan de slag wilt met Drupal Commerce?"
       -
         from: 15:00
         to: 15:45
